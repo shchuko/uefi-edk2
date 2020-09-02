@@ -35,8 +35,10 @@
   OvmfPkg/OvmfPkg.dec
   SecurityPkg/SecurityPkg.dec
   ShellPkg/ShellPkg.dec
+  XhyveDarwinPkg/XhyveDarwinPkg.dec
 
 [LibraryClasses]
+  AppleSupportLib
   BaseLib
   MemoryAllocationLib
   UefiBootServicesTableLib

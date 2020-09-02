@@ -362,6 +362,11 @@ PlatformBootManagerBeforeConsole (
     ConnectRootBridge, NULL);
 
   //
+  // Initialize AppleSupport library
+  //
+  InitializeAppleSupport (gImageHandle, gST);
+
+  //
   // Signal the ACPI platform driver that it can download QEMU ACPI tables.
   //
   EfiEventGroupSignal (&gRootBridgesConnectedEventGroupGuid);
@@ -1465,6 +1470,11 @@ PlatformBootManagerAfterConsole (
   RemoveStaleFvFileOptions ();
 
   PlatformBmPrintScRegisterHandler ();
+
+  //
+  // Launch macOS bootloader
+  //
+  BdsBootApple ();
 }
 
 /**

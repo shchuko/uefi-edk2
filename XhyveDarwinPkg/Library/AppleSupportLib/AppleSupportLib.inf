@@ -36,6 +36,7 @@
   OvmfPkg/OvmfPkg.dec
   IntelFrameworkPkg/IntelFrameworkPkg.dec
   IntelFrameworkModulePkg/IntelFrameworkModulePkg.dec
+  XhyveDarwinPkg/XhyveDarwinPkg.dec
 
 [LibraryClasses]
   UefiBootServicesTableLib

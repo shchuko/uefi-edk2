@@ -223,6 +223,8 @@
   TpmMeasurementLib|MdeModulePkg/Library/TpmMeasurementLibNull/TpmMeasurementLibNull.inf
 !endif
 
+  AppleSupportLib|XhyveDarwinPkg/Library/AppleSupportLib/AppleSupportLib.inf
+
 [LibraryClasses.common]
   BaseCryptLib|CryptoPkg/Library/BaseCryptLib/BaseCryptLib.inf
 
@@ -748,12 +750,17 @@
   MdeModulePkg/Universal/Acpi/S3SaveStateDxe/S3SaveStateDxe.inf
   MdeModulePkg/Universal/Acpi/BootScriptExecutorDxe/BootScriptExecutorDxe.inf
   MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
- 
+
   #
   # Apple HFS+ Support
   #
   XhyveDarwinPkg/VBoxHfs/VBoxHfs.inf
-  
+
+  #
+  # Apple boot (AppleSupportLib) Support
+  #
+  IntelFrameworkModulePkg/Universal/DataHubDxe/DataHubDxe.inf
+
   #
   # Network Support
   #
